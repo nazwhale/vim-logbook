@@ -8,4 +8,8 @@ command! -nargs=0 Ts call logbook#Timestamp()
 
 ""
 " Insert a new row below
-command! -nargs=0 New call logbook#NewItem()
+command! -nargs=0 Ni call logbook#NewItem()
+
+""
+" Mark as complete
+command! -nargs=0 C call logbook#MarkComplete()

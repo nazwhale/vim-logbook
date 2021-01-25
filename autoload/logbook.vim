@@ -12,9 +12,14 @@ function! logbook#Timestamp()
 endfunction
 
 ""
-" Insert a new row below
+" Insert a new line below with an empty checkbox
 function! logbook#NewItem()
-	execute "normal! o - [] \<ESC>"
-endfunction
+	execute "normal! A\n[] "
+  execute "startinsert!"
+endfunction  
 
-
+""
+" Mark current line as complete
+function! logbook#MarkComplete()
+	execute "normal! I\<ESC>f]ix\<ESC>"
+endfunction  
