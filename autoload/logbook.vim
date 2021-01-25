@@ -11,4 +11,10 @@ function! logbook#Timestamp()
 	execute "normal! i" . strftime("%c") . "\n- \<ESC>"
 endfunction
 
+""
+" Insert a new row below
+function! logbook#NewItem()
+	execute "normal! o - [] \<ESC>"
+endfunction
+
 
