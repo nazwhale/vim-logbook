@@ -19,13 +19,13 @@ function! logbook#NewItem()
 endfunction  
 
 ""
-" Mark current line as complete
+" Mark current line as complete with a +
 function! logbook#MarkComplete()
-	execute "normal! I\<ESC>f]F+rx\<ESC>"
+	execute "normal! I\<ESC>f]F.r+\<ESC>"
 endfunction  
 
 ""
-" Mark current line as in progress
+" Mark current line as in progress with a .
 function! logbook#MarkInProgress()
-	execute "normal! I\<ESC>f]i+\<ESC>"
+	execute "normal! I\<ESC>f]i.\<ESC>"
 endfunction  
