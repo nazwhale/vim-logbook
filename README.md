@@ -19,7 +19,8 @@ vim-logbook implements four commands:
 - `:Lb` - open today's logbook in the current buffer
 - `:Ts` - insert a timestamp under the cursor
 - `:Ni` - insert a new line with an empty checkbox
-- `:C`  - marks the checkbox on the current line as done
+- `:P`  - marks the checkbox on the current line as in progress
+- `:C`  - marks the checkbox on the current line as completed
 
 ## Example log file
 
