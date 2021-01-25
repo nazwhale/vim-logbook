@@ -13,3 +13,7 @@ command! -nargs=0 Ni call logbook#NewItem()
 ""
 " Mark as complete
 command! -nargs=0 C call logbook#MarkComplete()
+
+""
+" Mark as in progress
+command! -nargs=0 P call logbook#MarkInProgress()

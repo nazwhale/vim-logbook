@@ -21,5 +21,11 @@ endfunction
 ""
 " Mark current line as complete
 function! logbook#MarkComplete()
-	execute "normal! I\<ESC>f]ix\<ESC>"
+	execute "normal! I\<ESC>f]F+rx\<ESC>"
+endfunction  
+
+""
+" Mark current line as in progress
+function! logbook#MarkInProgress()
+	execute "normal! I\<ESC>f]i+\<ESC>"
 endfunction  
