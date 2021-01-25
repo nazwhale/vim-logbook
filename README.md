@@ -15,9 +15,11 @@ vim-logbook assumes the following structure:
 
 ## Commands
 
-vim-logbook implements two commands:
+vim-logbook implements four commands:
 - `:Lb` - open today's logbook in the current buffer
 - `:Ts` - insert a timestamp under the cursor
+- `:Ni` - insert a new line with an empty checkbox
+- `:C`  - marks the checkbox on the current line as done
 
 ## Example log file
 
@@ -41,5 +43,5 @@ Tue 23 Jan 23:38:55 2018
 vim-logbook can be installed with your favourite plugin manager.
 
 - [vim-plug](https://github.com/junegunn/vim-plug):
-	1. Add `Plug 'jamesroutley/vim-logbook'` to your `.vimrc`
+	1. Add `Plug 'nazwhale/vim-logbook'` to your `.vimrc`
 	2. Run `:PlugInstall`
